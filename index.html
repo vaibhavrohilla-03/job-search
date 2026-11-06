@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JobSift — search engineering jobs</title>
+<meta name="description" content="JobSift is a small, fast job search for software and engineering roles. Search by keyword and location, browse listings, and open the original posting.">
+<meta property="og:title" content="JobSift — search engineering jobs">
+<meta property="og:description" content="A small, fast job search for software and engineering roles.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a5cff'/><text x='16' y='23' font-size='19' font-family='system-ui' font-weight='800' text-anchor='middle' fill='white'>J</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">J</span>JobSift</a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Search</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Job search</span>
+      <h1>Find work that fits, without the noise.</h1>
+      <p class="lede">Search current openings by title, skill or city. JobSift pulls listings from partner job feeds and sends you straight to the original posting — no account, no resume upload, no recruiter spam.</p>
+
+      <form class="searchbar" action="search.html" method="get" role="search">
+        <label class="field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" name="q" placeholder="Job title, skill or company" aria-label="Keywords" autocomplete="off">
+        </label>
+        <label class="field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <input type="text" name="l" placeholder="City or remote" aria-label="Location" autocomplete="off">
+        </label>
+        <button class="btn" type="submit">Search jobs</button>
+      </form>
+
+      <div class="chips">
+        <span>Popular:</span>
+        <a class="chip" href="search.html?q=python+developer">Python developer</a>
+        <a class="chip" href="search.html?q=backend+engineer">Backend engineer</a>
+        <a class="chip" href="search.html?q=data+analyst">Data analyst</a>
+        <a class="chip" href="search.html?q=devops">DevOps</a>
+        <a class="chip" href="search.html?q=internship">Internships</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p>Three steps, no sign-up.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card step">
+          <div class="num">1</div>
+          <h3>Search</h3>
+          <p>Enter a job title, a skill, or a city. Results are ranked by relevance, date or salary.</p>
+        </div>
+        <div class="card step">
+          <div class="num">2</div>
+          <h3>Compare</h3>
+          <p>Each result shows the company, location, salary range when the employer publishes one, and an excerpt.</p>
+        </div>
+        <div class="card step">
+          <div class="num">3</div>
+          <h3>Apply at the source</h3>
+          <p>Every listing links to the original posting on the employer's site or job board, so you apply where it counts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Live listings</h2>
+        <p>Results from our job feed.</p>
+      </div>
+
+      <div class="note">
+        <span aria-hidden="true">ℹ️</span>
+        <div><strong>Preview build.</strong> The examples below are sample data used while the job feed integration is being finalised. Searching any keyword opens the results page for that query.</div>
+      </div>
+
+      <div class="joblist">
+        <a class="job" href="search.html?q=backend+engineer">
+          <div class="job-top">
+            <h3>Backend Engineer (Go)</h3>
+            <span class="co">Northwind Systems</span>
+            <span class="tag">Remote</span>
+          </div>
+          <div class="meta"><span><b>Full-time</b></span><span>Bengaluru, India</span><span>₹18–28 LPA</span><span>2 days ago</span></div>
+        </a>
+        <a class="job" href="search.html?q=python+developer">
+          <div class="job-top">
+            <h3>Python Developer</h3>
+            <span class="co">Ardent Data</span>
+            <span class="tag neutral">Hybrid</span>
+          </div>
+          <div class="meta"><span><b>Full-time</b></span><span>Pune, India</span><span>₹10–16 LPA</span><span>4 days ago</span></div>
+        </a>
+        <a class="job" href="search.html?q=frontend+developer">
+          <div class="job-top">
+            <h3>Frontend Developer (React)</h3>
+            <span class="co">Kite Labs</span>
+            <span class="tag">Remote</span>
+          </div>
+          <div class="meta"><span><b>Contract</b></span><span>India</span><span>Not disclosed</span><span>5 days ago</span></div>
+        </a>
+        <a class="job" href="search.html?q=data+analyst">
+          <div class="job-top">
+            <h3>Data Analyst</h3>
+            <span class="co">Meridian Retail Group</span>
+            <span class="tag neutral">On-site</span>
+          </div>
+          <div class="meta"><span><b>Full-time</b></span><span>Gurugram, India</span><span>₹8–14 LPA</span><span>1 week ago</span></div>
+        </a>
+        <a class="job" href="search.html?q=devops+engineer">
+          <div class="job-top">
+            <h3>DevOps Engineer</h3>
+            <span class="co">Sable Cloud</span>
+            <span class="tag">Remote</span>
+          </div>
+          <div class="meta"><span><b>Full-time</b></span><span>Hyderabad, India</span><span>₹15–24 LPA</span><span>1 week ago</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About the data</h2>
+        <p>Where these listings come from.</p>
+      </div>
+      <div class="prose">
+        <p>JobSift is a personal, non-commercial job search project. Listings are sourced from public job feeds and partner search APIs, then displayed in a single, lightweight interface. We do not republish full job descriptions, we never ask for payment, and every result links back to the original advertiser's page where the application is actually processed.</p>
+        <p>Read more in <a href="about.html">About</a>, or get in touch via the <a href="contact.html">contact page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> JobSift</span>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.careerjet.com/partners/publishers">Job feed partners</a>
+    </nav>
+    <span class="spacer">Built as a static site on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

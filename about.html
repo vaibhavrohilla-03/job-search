@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — JobSift</title>
+<meta name="description" content="About JobSift: a small, non-commercial job search that aggregates public job listings and links back to the original posting.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a5cff'/><text x='16' y='23' font-size='19' font-family='system-ui' font-weight='800' text-anchor='middle' fill='white'>J</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">J</span>JobSift</a>
+    <nav class="nav">
+      <a href="index.html">Search</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>About JobSift</h1>
+      <p>A deliberately small job search: one box, readable results, and a direct link to the employer.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="prose">
+        <h2>What this is</h2>
+        <p>JobSift is a personal, non-commercial project. It is a single-page interface for searching job listings that are published publicly by employers and job boards, with the goal of making them easier to read and compare on a phone or a slow connection. There is no account system, no resume database, and no paid placement.</p>
+
+        <h2>Where listings come from</h2>
+        <p>Listings are collected from public job feeds and partner search APIs that are intended for syndication and republication. Where a partner requires attribution or a link back to the source, this site does exactly that: every result points to the original posting page, and applications are always completed on the advertiser's own site.</p>
+        <ul>
+          <li>Job search and listing data is provided by third-party feeds and partner APIs.</li>
+          <li>Excerpts are shortened; full descriptions are never republished.</li>
+          <li>Salary figures appear only when the source publishes them.</li>
+          <li>Listings that no longer resolve at the source are removed.</li>
+        </ul>
+
+        <h2>What this is not</h2>
+        <p>JobSift does not charge candidates, does not resell candidate data, and does not act as a recruiter or staffing agency. It is not affiliated with the employers listed. If a listing looks wrong or outdated, please <a href="contact.html">tell us</a> and it will be corrected or removed.</p>
+
+        <h2>Technical notes</h2>
+        <p>The site is a static build — plain HTML, CSS and a small amount of JavaScript — served from GitHub Pages. It sets no advertising cookies and runs no third-party analytics. Any search performed here is stateless: nothing is stored on the server.</p>
+
+        <h2>Contact</h2>
+        <p>Questions, corrections, or takedown requests go to the address on the <a href="contact.html">contact page</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> JobSift</span>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.careerjet.com/partners/publishers">Job feed partners</a>
+    </nav>
+    <span class="spacer">Built as a static site on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
